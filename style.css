@@ -1,0 +1,26 @@
+#NavBar {
+    background-color: rgb(40, 0, 173);
+    display: flex;
+    height: 6vh;
+}
+
+#Texto1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+#DivButton1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Button1 {
+    background-color: orangered;
+    border-radius: none;
+    border: none;
+    cursor: pointer;
+}

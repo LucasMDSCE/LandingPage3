@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -14,7 +15,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 9vh;
+    height: 6vh;
 }
 
 #Texto1 {
@@ -22,9 +23,6 @@ body {
     align-items: center;
     justify-content: center;
     color: white;
-    width: 35vw;
-    font-size: 13px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 #Logo {
@@ -59,24 +57,26 @@ body {
 }
 
 #Welcome {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    padding: 40px 20px;
-    text-align: justify;
-    max-width: 700px;
+    text-align: left;
+    max-width: 1200px;
     margin: auto;
-    font-size: 10px;
-    margin-left: 5vw;
     justify-content: space-between;
+    display: flex;
+    gap: 40px;
 }
 
-h2, h3, h5, h6 {
+h2,
+h3,
+h5,
+h6 {
     margin-bottom: 20px
 }
 
 #FotoHomem {
-    display: flex;
     align-items: center;
+    height: auto;
 }
 
 #GetHigher {
@@ -88,7 +88,6 @@ h2, h3, h5, h6 {
     height: 25vh;
     justify-content: space-around;
     color: white;
-
 }
 
 #Button2 {
@@ -104,13 +103,129 @@ h2, h3, h5, h6 {
 }
 
 #UnlockConversation {
-    background-color: #ffffff;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+  max-width: 900px;
+  margin: 60px auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #0a4369;
+  padding: 0 20px;
 }
 
-#GotAQuestions {
-    background-color: #0077f9;
+#UnlockConversation h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
+
+#UnlockConversation h5 {
+  font-size: 14px;
+  font-weight: normal;
+  color: #4a6880;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.Options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  justify-items: center;
+  margin-bottom: 30px;
+}
+
+.BoxOption {
+  border: 1px solid #4a6880;
+  padding: 15px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #4a6880;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;                
+  min-height: 60px;           
+  box-sizing: border-box;
+}
+
+.BoxOption:hover {
+  background-color: #4a6880;
+  color: white;
+}
+
+.OtherOptions {
+  display: flex;
+  justify-content: center;
+}
+
+.OtherOptions .BoxOption {
+  width: fit-content;
+  min-width: 300px;
+}
+
+
+#GotAQuestions {
+  background-color: #007bff;
+  display: flex;
+  width: 100%;
+}
+
+.LateralEsquerda {
+  padding: 40px 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.LateralEsquerda a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.LateralDireita {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  color: white;
+}
+
+.LateralDireita h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.LateralDireita p {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.footer {
+  background-color: #084c6d;
+  padding: 40px 0;
+  text-align: center;
+  color: #ccc;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+#logofooter  {
+  height: 50%;
+}
+
